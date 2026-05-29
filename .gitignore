@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+
+# Dataset
+dataset/
+
+# AI Model
+model/
+
+# Upload Folder
+uploads/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/

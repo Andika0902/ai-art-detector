@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Art Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- TOP BANNER -->
+    <!-- ========================= -->
+
+    <div class="top-banner">
+
+        AI Art Detector - Powered by Deep Learning
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- MAIN -->
+    <!-- ========================= -->
+
+    <div class="main-container">
+
+        <!-- ========================= -->
+        <!-- UPLOAD SCREEN -->
+        <!-- ========================= -->
+
+        <div class="upload-screen" id="uploadScreen">
+
+            <div class="upload-box" id="dropArea">
+
+                <div class="upload-icon">
+                    ⬆
+                </div>
+
+                <h2>
+                    Drag & Drop or Click to Upload an Image
+                </h2>
+
+                <p>
+                    Detect AI Generated Art or Human Illustration using Deep Learning.
+                </p>
+
+                <!-- HAPUS onclick -->
+                <button class="upload-btn" id="uploadBtn" type="button">
+                    Upload File
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- RESULT SCREEN -->
+        <!-- ========================= -->
+
+        <div class="result-container hidden" id="resultContainer">
+
+            <!-- IMAGE -->
+
+            <div class="image-box">
+
+                <img id="preview" src="" alt="Preview">
+
+            </div>
+
+            <!-- RESULT PANEL -->
+
+            <div class="result-panel">
+
+                <!-- ALERT -->
+
+                <div id="alertBox" class="alert-box ai-theme">
+
+                    <div>
+
+                        <p class="alert-title">
+                            Detection Result
+                        </p>
+
+                        <h3 id="alertText">
+                            AI Generated
+                        </h3>
+
+                    </div>
+
+                    <div class="percentage-badge" id="percentageBadge">
+                        0%
+                    </div>
+
+                </div>
+
+                <!-- INFO -->
+
+                <div class="info-box">
+
+                    <div class="info-row">
+
+                        <span>AI Likelihood</span>
+
+                        <strong id="aiPercent">
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="info-row">
+
+                        <span>Confidence</span>
+
+                        <strong id="confidenceText">
+                            High
+                        </strong>
+
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="info-row">
+
+                        <span>Classification</span>
+
+                        <strong id="classificationText">
+                            AI Generated
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <!-- TRY AGAIN -->
+
+                <button class="try-btn" onclick="resetUI()">
+                    ↻ Try Another Image
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
